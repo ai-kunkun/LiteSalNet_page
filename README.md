@@ -1,5 +1,5 @@
 
-Webpage for our paper: Niagara: Normal-Integrated Geometric Affine Fields for Scene Reconstruction from a Single View.
+Webpage for our paper: A Lightweight Multi-Stream Framework for Salient Object Detection in Optical Remote Sensing.
 <p align="center">
   </br>
     <a href="https://arxiv.org/">
