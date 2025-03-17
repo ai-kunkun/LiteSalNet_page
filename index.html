@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteSalNet - Salient Object Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="title">LiteSalNet</h1>
+                <h2 class="subtitle">A Lightweight Multi-Stream Framework for Salient
+                    Object Detection in Optical Remote Sensing</h2>
+                
+                <div class="author-section">
+                    <div class="author-group">
+                        <div class="author-item">
+                            <a href="https://ai-kunkun.github.io/" class="author-name">Zhenxin Ai</a>
+                            <sup class="author-sup">1</sup>
+                        </div>
+                        <div class="author-item">
+                            <span class="author-name">Huilan Luo</span>
+                            <sup class="author-sup">1†</sup>
+                        </div>
+                        <div class="author-item">
+                            <span class="author-name">Jianqin Wang</span>
+                            <sup class="author-sup">1</sup>
+                        </div>
+                    </div>
+                    <div class="affiliation">
+                        <sup>1</sup> Jiangxi University of Science and Technology, Ganzhou, China
+                        <div class="corresponding">† Corresponding Author</div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="#" class="action-btn paper-btn">
+                        <i class="fas fa-file-pdf"></i> Paper
+                    </a>
+                    <a href="https://github.com/ai-kunkun/LiteSalNet" class="action-btn code-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section class="abstract-section">
+        <div class="container">
+            <h3 class="section-title">Abstract</h3>
+            <div class="abstract-content">
+                <p class="highlight">Salient object detection in optical remote sensing images (ORSIs) presents unique challenges due to small object sizes, low contrast, and complex backgrounds. 
+                    Existing methods often rely on computationally intensive architectures, limiting real-world applicability. LiteSalNet addresses these issues by introducing a lightweight MobileNetV2 backbone with only 3.90M parameters, 
+                    combined with three core modules: the Adaptive Spatial Attention Module (ASAM), Dual-Scale Feature Enhancement Module (DSFEM), and Semantic Context Enhancement Module (SCEM). 
+                    These modules work synergistically to refine multi-scale features through a Multi-Stream Progressively Decoding Framework (MSPDF), achieving state-of-the-art performance on ORSI datasets while maintaining computational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Framework Overview -->
+            <section class="card architecture-card">
+                <h3 class="section-title">Framework Architecture</h3>
+                <div class="card-body">
+                    <img src="image/model.png" alt="Model Architecture" class="featured-image">
+                    <div class="image-caption">
+                        <p>Figure 1: Overall architecture of LiteSalNet. The network follows an encoder-decoder structure based on MobileNetV2,
+                             featuring three specialized modules: Adaptive Spatial Attention Module (ASAM), Dual-Scale Feature Enhancement Module (DSFEM), 
+                             and Semantic Context Enhancement Module (SCEM). These modules refine multi-scale features, which are further processed through the Multi-Stream Progressively Decoding Framework (MSPDF). 
+                            The MSPDF employs three parallel decoding streams for saliency prediction, edge detection, and skeleton estimation, enabling accurate, boundary-aware, and structure-consistent saliency detection.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Results -->
+            <section class="card results-card">
+                <h3 class="section-title">Quantitative Results</h3>
+                <div class="card-body">
+                    <img src="image/result.png" alt="Benchmark Results" class="chart-image">
+                    <div class="image-caption">
+                        <p>Table 1: Quantitative comparison with SOTA methods on ORSI datasets. Top scores are highlighted in red (best), blue (second), and green (third).</p>
+                    </div>
+                </div>
+            </section>
+<!-- Qualitative Results -->
+<section class="card pr-card">
+    <h3 class="section-title">PR Curve</h3>
+    <div class="card-body">
+        <img src="image/quliResults.png" alt="PR Curve" class="chart-image">
+        <div class="image-caption">
+            <p>Figure 2: Visual comparisons with 12 state-of-the-art ORSI-SOD models on various challenging ORSI scenarios. Please zoom-in for better visualization.</p>
+        </div>
+    </div>
+</section>
+<!-- PR Curve Section -->
+<section class="card pr-card">
+    <h3 class="section-title">PR Curve</h3>
+    <div class="card-body">
+        <img src="image/Prresults.png" alt="PR Curve" class="chart-image">
+        <div class="image-caption">
+            <p>Figure 3: PR curves (left column) and F-measure curves (right column) on the ORSSD and EORSSD datasets.</p>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2024 LiteSalNet Research Team. Licensed under <a href="#">CC BY-SA 4.0</a></p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-researchgate"></i></a>
+                    <a href="#"><i class="ai ai-arxiv"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
